@@ -1,12 +1,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bubble-sender: #e1e1e1;
+  --bubble-receiver: #74ad63;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --bubble-sender: #1e4029;
+    --bubble-receiver: #2f3e46;
   }
 }
 
@@ -35,8 +39,20 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  font-size: 14px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 500px) {
+  input,
+  textarea {
+    font-size: 16px;
   }
 }
