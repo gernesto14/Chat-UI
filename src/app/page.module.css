@@ -6,14 +6,16 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
+  /* display: grid; */
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  /* padding: 80px; */
+  /* gap: 64px; */
   font-family: var(--font-geist-sans);
+
+  background: var(--background);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,14 +26,16 @@
 
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
+    background: var(--background);
   }
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  /* gap: 32px; */
+  /* grid-row-start: 2; */
+  background: var(--background);
 }
 
 .main ol {
@@ -67,10 +71,7 @@
   height: 48px;
   padding: 0 20px;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -92,15 +93,16 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
+  /* grid-row-start: 3; */
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  background: var(--background);
 }
 
 .footer a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
 }
 
 .footer img {
@@ -127,8 +129,8 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    /* padding: 32px; */
+    /* padding-bottom: 80px; */
   }
 
   .main {

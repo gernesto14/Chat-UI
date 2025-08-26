@@ -1,0 +1,16 @@
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── node_modules
+├── package-lock.json
+├── package.json
+├── project-structure.txt
+├── public
+├── src
+└── tsconfig.json
+
+4 directories, 10 files

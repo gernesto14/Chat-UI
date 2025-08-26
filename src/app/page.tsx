@@ -2,8 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Chat from "../components/Chat.jsx";
 
-// client-chat/src/components/client-socket.jsx
-
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -13,10 +11,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div>
-          {" "}
-          <div></div>
-          <div></div>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          {/* <a href="/" target="_blank" rel="noopener noreferrer">
             <Image
               aria-hidden
               src="/globe.svg"
@@ -25,7 +20,7 @@ export default function Home() {
               height={16}
             />
             Go to home →
-          </a>
+          </a> */}
         </div>
       </footer>
     </div>
