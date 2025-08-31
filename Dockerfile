@@ -3,6 +3,9 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
+# Set environment file to use during build (default: .env.development)
+ARG ENV_FILE=.env.development
+
 # Copy only package files first (better caching)
 COPY package*.json ./
 
@@ -12,8 +15,8 @@ RUN npm install
 # Copy rest of the project
 COPY . .
 
-# Set environment variables
-COPY .env.development .env
+ # inject env at build
+COPY ${ENV_FILE} .env  
 
 # Build Next.js app
 RUN npm run build
